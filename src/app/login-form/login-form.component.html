@@ -1,0 +1,23 @@
+<p>
+  login-form works!
+</p>
+
+<div class="login-page" >
+  <div class="form">
+    <form class="register-form" >
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#" routerLink="/login">Sign In</a></p>
+    </form>
+    <form class="login-form" (submit)="loginUser($event)">
+      <input type="text" placeholder="Enter Your Email"/>
+      <input type="password" placeholder="Enter Your Password"/>
+      <button (click)="loginUser(e)" routerLink="/adminDashboard">login</button>
+      <p class="message">Not registered? <a href="#" routerLink="/signIn">Create an account</a></p>
+    </form>
+  </div>
+</div>
+
+<!-- <router-outlet></router-outlet> -->
